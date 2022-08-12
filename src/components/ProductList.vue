@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Product } from "@/models/Product";
+import ProductComponent from "./productComponent.vue";
 
 const props = defineProps<{
   products: Product[];
@@ -12,7 +13,7 @@ const props = defineProps<{
   <div class="container grid">
     <div class="col" v-for="product in props.products" :key="product.id">
       <div class="card">
-        {{ product.title }}
+      <ProductComponent :product="product"></ProductComponent>
       </div>
     </div>
   </div>
