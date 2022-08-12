@@ -1,12 +1,16 @@
-<template>
+<script setup lang="ts">
+import {Product} from '../models/Product.ts';
 
-</template>
-
-<script>
 export default {
   name: "Product"
 }
 </script>
+
+<template>
+
+</template>
+
+
 
 <style scoped>
 
