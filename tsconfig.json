@@ -12,9 +12,6 @@
     },
     {
       "path": "./tsconfig.vitest.json"
-    },
-    {
-      "path": "./assets/products.json"
     }
   ]
 }
