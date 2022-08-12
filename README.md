@@ -1,3 +1,3 @@
 # vuejs-getting-started
 
-Vue.js repository used in my "Getting started with Vue.js" class.
+Forked as training code from @smack0007 's Vue.js class.
