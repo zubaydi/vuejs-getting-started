@@ -8,10 +8,13 @@ const props = defineProps<{
 </script>
 
 <template>
-{{product.title}}
-{{product.brand}}
-{{product.thumbnail}}
- 
+  <div class="card">
+    <img :src=product.thumbnail class="card-img-top">
+    <div class="card-body">
+    <h5 class="card-title">{{product.title}}</h5>
+    {{product.brand}}
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
