@@ -12,7 +12,9 @@ const props = defineProps<{
 
   <div class="container grid">
     <div class="col" v-for="product in props.products" :key="product.id">
+      <div class="card">
 
+      </div>
     </div>
   </div>
 </template>
