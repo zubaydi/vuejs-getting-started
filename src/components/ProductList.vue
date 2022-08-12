@@ -2,7 +2,7 @@
 import type { Product } from "@/models/Product";
 import ProductComponent from "./ProductComponent.vue";
 
-const props = defineProps<{
+defineProps<{
   products: Product[];
 }>();
 </script>
@@ -10,14 +10,14 @@ const props = defineProps<{
 <template>
   <h1>Products</h1>
   <div class="container grid">
-    <div class="col" v-for="product in props.products" :key="product.id">
+    <div class="col" v-for="product in products" :key="product.id">
       <ProductComponent :product="product" class="product"></ProductComponent>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  .product{
-    width: 100px;
-  }
+.product {
+  width: 100px;
+}
 </style>
